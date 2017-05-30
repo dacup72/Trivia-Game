@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trivia Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10 box-title">
+				<h1>Hawaiian Islands Trivia!</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10 box-timer">
+				<span><h3>Time Remaining:</h3><h3 id="clockDisplay">01:00</h3></span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10 box-question">
+				<div id="questionDisplay">Question goes here...</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10 box-answers">
+				<div class="button-answer" id="answer1">answer 1...</div>
+				<div class="button-answer" id="answer2">answer 2...</div>
+				<div class="button-answer" id="answer3">answer 3...</div>
+				<div class="button-answer" id="answer4">answer 4...</div>
+			</div>
+		</div>
+	</div>
+	<div class="box-popup-correct">
+		<p class="text-popup-correct"><h2>Correct!<h2></p>
+	</div>
+	<div class="box-popup-wrong">
+		<p class="text-popup-wrong"><h2>Incorrect!<h2></p>
+		<br>
+		<div class="popup-wrong-answer">answer
+		</div>
+	</div>
+	<div class="box-popup-final">
+		<div class="text-final">
+			<p id="correctAnswersDisplay">correct answers: </p>
+			<p id="wrongAnswersDisplay">wrong answers: </p>
+			<p id="percentDisplay">Percentage: </p>
+			<button class="btn btn-default" id="buttonRestart">Try Again!</button>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
