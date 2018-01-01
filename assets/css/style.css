@@ -1,11 +1,29 @@
 
+
+
+
+
+
+
+
+
+
+
+/* 
+=========================
+OLD CODE
+=========================  
+*/
+
+
+/*
+
 .container {
 	position: static;
 	z-index: 1;
 	opacity: 1;
 }
 
-/*----- TITLE -----*/
 
 .box-title {
 	background-color: tan;
@@ -17,7 +35,7 @@
 	border: black 2px solid;
 }
 
-/*----- TIMER -----*/
+
 
 .box-timer {
 	background-color: tan;
@@ -27,7 +45,7 @@
 	border: black 2px solid;
 }
 
-/*----- QUESTION -----*/
+
 
 .box-question {
 	background-color: tan;
@@ -39,7 +57,7 @@
 	border-left: black 2px solid; 
 }
 
-/*----- ANSWERS -----*/
+
 
 .box-answers {
 	background-color: tan;
@@ -57,7 +75,7 @@
 	margin-top: 10px;
 }
 
-/*----- POPUPS -----*/
+
 
 .box-popup-correct {
 	height: 200px;
@@ -103,4 +121,5 @@
 	border: black 4px solid;
 	text-align: center;
 	line-height: 80px;
-}
+} 
+*/
