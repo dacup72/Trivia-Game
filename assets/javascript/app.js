@@ -76,6 +76,19 @@ var game = {
 }
 
 
+// CLICK EVENTS
+
+// Initial start button for game
+$(document).on("click", "#start", function() {
+  game.start();
+});
+
+// Button to submit answers when done answering the trivia questions
+$(document).on("click", "#done", function() {
+  game.done();
+});
+
+
 
 
 
