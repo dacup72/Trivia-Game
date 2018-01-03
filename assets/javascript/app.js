@@ -1,6 +1,5 @@
 
-
-
+// Data for trivia questions
 var questions = [{
   question: "What was the first full length CGI movie?",
   answers: ["A Bug's Life", "Monsters Inc.", "Toy Story", "The Lion King"],
@@ -36,8 +35,17 @@ var questions = [{
 }];
 
 
+// Global Variables
+var panel = $("#quiz-area");
+var timer = 0;
 
 
+// Main game object
+var game = {
+	correct: 0,
+  incorrect: 0,
+  counter: 100
+}
 
 
 
