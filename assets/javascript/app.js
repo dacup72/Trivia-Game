@@ -44,7 +44,22 @@ var timer = 0;
 var game = {
 	correct: 0,
   incorrect: 0,
-  counter: 100
+	counter: 100,
+	
+	// Count down timer for game
+	countdown: function() {
+    game.counter--;
+    $("#counter-number").html(game.counter);
+    if (game.counter === 0) {
+      console.log("TIME UP");
+      game.done();
+    }
+	},
+	
+	// Done function for when game timer reaches 0
+	done: function() {
+
+    
 }
 
 
