@@ -56,11 +56,15 @@ var game = {
 		}
 	},
 
+	// Function for starting the game
 	start: function() {
-    timer = setInterval(game.countdown, 1000);
-
-    $("#sub-wrapper").prepend("<h2>Time Remaining: <span id='counter-number'>120</span> Seconds</h2>");
-
+		// Sets the timer up on a 1 second interval
+		timer = setInterval(game.countdown, 1000);
+		
+		// Creates html for the timer
+		$("#sub-wrapper").prepend("<h2>Time Remaining: <span id='counter-number'>120</span> Seconds</h2>");
+		
+		// Removes th start button
     $("#start").remove();
 
     
