@@ -77,7 +77,7 @@ var game = {
       }
     }
 
-
+		panel.append("<button id='done'>Done</button>");
     
   },
 
