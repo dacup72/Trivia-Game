@@ -67,7 +67,16 @@ var game = {
 		// Removes th start button
     $("#start").remove();
 
-    
+		// Creates the parent div to display each question
+    for (var i = 0; i < questions.length; i++) {
+			panel.append("<h2>" + questions[i].question + "</h2>");
+			// Creates the 4 radio answers for each question div
+      for (var j = 0; j < questions[i].answers.length; j++) {
+        panel.append("<input type='radio' name='question-" + i +
+        "' value='" + questions[i].answers[j] + "''>" + questions[i].answers[j]);
+      }
+    }
+
 
     
   },
