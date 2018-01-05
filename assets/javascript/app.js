@@ -77,6 +77,7 @@ var game = {
       }
     }
 
+		// Creates done button on survey
 		panel.append("<button id='done'>Done</button>");
     
   },
