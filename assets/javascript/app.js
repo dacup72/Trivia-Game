@@ -87,10 +87,10 @@ var game = {
 
 		// Loop through questions data to check users answers 
 		for (var i = 0; i < questions.length; i++) {
-			
+
 			// Loop through and check each answer for the current question we are checking
-			$.each($("input[name='question-0']:checked"), function() {
-				if ($(this).val() === questions[0].correctAnswer) {
+			$.each($(`input[name='question-${i}']:checked`), function() {
+				if ($(this).val() === questions[i].correctAnswer) {
 					game.correct++;
 				}
 				else {
@@ -101,77 +101,77 @@ var game = {
 		}
 
 
-		$.each($("input[name='question-0']:checked"), function() {
-      if ($(this).val() === questions[0].correctAnswer) {
-        game.correct++;
-      }
-      else {
-        game.incorrect++;
-      }
-    });
+		// $.each($("input[name='question-0']:checked"), function() {
+    //   if ($(this).val() === questions[0].correctAnswer) {
+    //     game.correct++;
+    //   }
+    //   else {
+    //     game.incorrect++;
+    //   }
+    // });
 
-    $.each($("input[name='question-1']:checked"), function() {
-      if ($(this).val() === questions[1].correctAnswer) {
-        game.correct++;
-      }
-      else {
-        game.incorrect++;
-      }
-    });
+    // $.each($("input[name='question-1']:checked"), function() {
+    //   if ($(this).val() === questions[1].correctAnswer) {
+    //     game.correct++;
+    //   }
+    //   else {
+    //     game.incorrect++;
+    //   }
+    // });
 
-    $.each($("input[name='question-2']:checked"), function() {
-      if ($(this).val() === questions[2].correctAnswer) {
-        game.correct++;
-      }
-      else {
-        game.incorrect++;
-      }
-    });
+    // $.each($("input[name='question-2']:checked"), function() {
+    //   if ($(this).val() === questions[2].correctAnswer) {
+    //     game.correct++;
+    //   }
+    //   else {
+    //     game.incorrect++;
+    //   }
+    // });
 
-    $.each($("input[name='question-3']:checked"), function() {
-      if ($(this).val() === questions[3].correctAnswer) {
-        game.correct++;
-      }
-      else {
-        game.incorrect++;
-      }
-    });
+    // $.each($("input[name='question-3']:checked"), function() {
+    //   if ($(this).val() === questions[3].correctAnswer) {
+    //     game.correct++;
+    //   }
+    //   else {
+    //     game.incorrect++;
+    //   }
+    // });
 
-    $.each($("input[name='question-4']:checked"), function() {
-      if ($(this).val() === questions[4].correctAnswer) {
-        game.correct++;
-      }
-      else {
-        game.incorrect++;
-      }
-    });
+    // $.each($("input[name='question-4']:checked"), function() {
+    //   if ($(this).val() === questions[4].correctAnswer) {
+    //     game.correct++;
+    //   }
+    //   else {
+    //     game.incorrect++;
+    //   }
+    // });
 
-    $.each($("input[name='question-5']:checked"), function() {
-      if ($(this).val() === questions[5].correctAnswer) {
-        game.correct++;
-      }
-      else {
-        game.incorrect++;
-      }
-    });
+    // $.each($("input[name='question-5']:checked"), function() {
+    //   if ($(this).val() === questions[5].correctAnswer) {
+    //     game.correct++;
+    //   }
+    //   else {
+    //     game.incorrect++;
+    //   }
+    // });
 
-    $.each($("input[name='question-6']:checked"), function() {
-      if ($(this).val() === questions[6].correctAnswer) {
-        game.correct++;
-      }
-      else {
-        game.incorrect++;
-      }
-    });
+    // $.each($("input[name='question-6']:checked"), function() {
+    //   if ($(this).val() === questions[6].correctAnswer) {
+    //     game.correct++;
+    //   }
+    //   else {
+    //     game.incorrect++;
+    //   }
+    // });
 
-    $.each($("input[name='question-7']:checked"), function() {
-      if ($(this).val() === questions[7].correctAnswer) {
-        game.correct++;
-      }
-      else {
-        game.incorrect++;
-      }
-    });
+    // $.each($("input[name='question-7']:checked"), function() {
+    //   if ($(this).val() === questions[7].correctAnswer) {
+    //     game.correct++;
+    //   }
+    //   else {
+    //     game.incorrect++;
+    //   }
+    // });
 
     this.result();
 
