@@ -84,6 +84,23 @@ var game = {
 
 	// Done function for when game timer reaches 0
 	done: function () {
+
+		// Loop through questions data to check users answers 
+		for (var i = 0; i < questions.length; i++) {
+			
+			// Loop through and check each answer for the current question we are checking
+			$.each($("input[name='question-0']:checked"), function() {
+				if ($(this).val() === questions[0].correctAnswer) {
+					game.correct++;
+				}
+				else {
+					game.incorrect++;
+				}
+			});
+			
+		}
+
+
 		$.each($("input[name='question-0']:checked"), function() {
       if ($(this).val() === questions[0].correctAnswer) {
         game.correct++;
