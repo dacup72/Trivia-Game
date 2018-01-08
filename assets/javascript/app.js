@@ -56,6 +56,7 @@ var game = {
 		}
 	},
 
+
 	// Function for starting the game
 	start: function() {
 		// Sets the timer up on a 1 second interval
@@ -82,12 +83,11 @@ var game = {
     
   },
 
+
 	// Done function for when game timer reaches 0
 	done: function () {
-
 		// Loop through questions data to check users answers 
 		for (var i = 0; i < questions.length; i++) {
-
 			// Loop through and check each answer for the current question we are checking
 			$.each($(`input[name='question-${i}']:checked`), function() {
 				if ($(this).val() === questions[i].correctAnswer) {
@@ -97,91 +97,15 @@ var game = {
 					game.incorrect++;
 				}
 			});
-			
 		}
 
-
-		// $.each($("input[name='question-0']:checked"), function() {
-    //   if ($(this).val() === questions[0].correctAnswer) {
-    //     game.correct++;
-    //   }
-    //   else {
-    //     game.incorrect++;
-    //   }
-    // });
-
-    // $.each($("input[name='question-1']:checked"), function() {
-    //   if ($(this).val() === questions[1].correctAnswer) {
-    //     game.correct++;
-    //   }
-    //   else {
-    //     game.incorrect++;
-    //   }
-    // });
-
-    // $.each($("input[name='question-2']:checked"), function() {
-    //   if ($(this).val() === questions[2].correctAnswer) {
-    //     game.correct++;
-    //   }
-    //   else {
-    //     game.incorrect++;
-    //   }
-    // });
-
-    // $.each($("input[name='question-3']:checked"), function() {
-    //   if ($(this).val() === questions[3].correctAnswer) {
-    //     game.correct++;
-    //   }
-    //   else {
-    //     game.incorrect++;
-    //   }
-    // });
-
-    // $.each($("input[name='question-4']:checked"), function() {
-    //   if ($(this).val() === questions[4].correctAnswer) {
-    //     game.correct++;
-    //   }
-    //   else {
-    //     game.incorrect++;
-    //   }
-    // });
-
-    // $.each($("input[name='question-5']:checked"), function() {
-    //   if ($(this).val() === questions[5].correctAnswer) {
-    //     game.correct++;
-    //   }
-    //   else {
-    //     game.incorrect++;
-    //   }
-    // });
-
-    // $.each($("input[name='question-6']:checked"), function() {
-    //   if ($(this).val() === questions[6].correctAnswer) {
-    //     game.correct++;
-    //   }
-    //   else {
-    //     game.incorrect++;
-    //   }
-    // });
-
-    // $.each($("input[name='question-7']:checked"), function() {
-    //   if ($(this).val() === questions[7].correctAnswer) {
-    //     game.correct++;
-    //   }
-    //   else {
-    //     game.incorrect++;
-    //   }
-    // });
-
     this.result();
-
-
 	},
+
 
 	// Displays results to the user and clears the timer
 	result: function () {
 		clearInterval(timer);
-
 		$("#sub-wrapper h2").remove();
 
 		panel.html("<h2>All Done!</h2>");
