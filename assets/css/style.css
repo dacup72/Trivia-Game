@@ -18,7 +18,13 @@ body {
   background-color: #fff17a;
 }
 
-
+h1 {
+  margin-bottom: 50px;
+  font-family: Geo, sans-serif;
+  font-size: 6.5em;
+  font-weight: bold;
+  color: blue;
+}
 
 
 
