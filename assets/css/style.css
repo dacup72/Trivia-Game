@@ -52,6 +52,11 @@ h3 {
   font-size: 25px;
 }
 
+#start {
+  margin-top: 10%;
+  background: pink;
+  border: 2px solid blue;
+}
 /* 
 =========================
 OLD CODE
