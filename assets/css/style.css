@@ -57,6 +57,15 @@ h3 {
   background: pink;
   border: 2px solid blue;
 }
+
+#quiz-area h2 {
+  margin-top: 50px;
+}
+
+button:hover {
+  background: pink;
+  border: 2px solid blue;
+}
 /* 
 =========================
 OLD CODE
