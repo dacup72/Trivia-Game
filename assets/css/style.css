@@ -10,7 +10,10 @@ body {
 
 
 #wrapper {
-  
+  width: 960px;
+  min-height: 80%;
+  box-sizing: border-box;
+  padding: 5% 0;
   margin: 5% auto;
   background-color: #fff17a;
 }
