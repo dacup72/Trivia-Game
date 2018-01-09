@@ -9,7 +9,11 @@ body {
 }
 
 
-
+#wrapper {
+  
+  margin: 5% auto;
+  background-color: #fff17a;
+}
 
 
 
