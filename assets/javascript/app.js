@@ -112,6 +112,7 @@ var game = {
 		panel.append("<h3>Correct Answers: " + this.correct + "</h3>");
 		panel.append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
 		panel.append("<h3>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
+		panel.append("<button id='restart'>Restart</button>");
 	}
 }
 
@@ -126,6 +127,11 @@ $(document).on("click", "#start", function() {
 // Button to submit answers when done answering the trivia questions
 $(document).on("click", "#done", function() {
   game.done();
+});
+
+// Button to restart game
+$(document).on("click", "#restart", function() {
+  game.start();
 });
 
 
