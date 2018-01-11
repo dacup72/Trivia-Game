@@ -65,9 +65,10 @@ var game = {
 		// Creates html for the timer
 		$("#sub-wrapper").prepend("<h2>Time Remaining: <span id='counter-number'>120</span> Seconds</h2>");
 		
-		// Removes the start and restart buttons
+		// Reset panel
 		$("#start").remove();
 		$("#restart").remove();
+		$("#donePanel").remove();
 
 		// Creates the parent div to display each question
     for (var i = 0; i < questions.length; i++) {
@@ -115,14 +116,9 @@ var game = {
 				<h3>Correct Answers: ${this.correct}</h3>
 				<h3>Incorrect Answers: ${this.incorrect}</h3>
 				<h3>Unanswered: ${(questions.length - (this.incorrect + this.correct))}</h3>
+				<button id='restart'>Restart</button>
 			</div>
 		`);
-		
-		panel.html("<h2>All Done!</h2>");
-		panel.append("<h3>Correct Answers: " + this.correct + "</h3>");
-		panel.append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
-		panel.append("<h3>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");
-		panel.append("<button id='restart'>Restart</button>");
 	}
 }
 
