@@ -44,7 +44,7 @@ var timer = 0;
 var game = {
 	correct: 0,
 	incorrect: 0,
-	counter: 100,
+	counter: 60,
 
 	// Count down timer for game
 	countdown: function () {
