@@ -107,8 +107,9 @@ var game = {
 	},
 	
 
-
+	// Load the next question
 	loadQuestion: function() {
+		// reset timer
     timer = setInterval(game.countdown, 1000);
 
     panel.html("<h2>" + questions[this.currentQuestion].question + "</h2>");
