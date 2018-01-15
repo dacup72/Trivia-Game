@@ -150,20 +150,32 @@ var game = {
 
 
 	// Displays results to the user and clears the timer
-	result: function () {
-		clearInterval(timer);
-		$("#sub-wrapper h2").remove();
+	results: function() {
 
-		panel.html(`
-			<div id="donePanel">
-				<h2>All Done!</h2>
-				<h3>Correct Answers: ${this.correct}</h3>
-				<h3>Incorrect Answers: ${this.incorrect}</h3>
-				<h3>Unanswered: ${(questions.length - (this.incorrect + this.correct))}</h3>
-				<button id='restart'>Restart</button>
-			</div>
-		`);
-	}
+    clearInterval(timer);
+
+    panel.html("<h2>All done, heres how you did!</h2>");
+
+    $("#counter-number").text(game.counter);
+
+    panel.append("<h3>Correct Answers: " + game.correct + "</h3>");
+    panel.append("<h3>Incorrect Answers: " + game.incorrect + "</h3>");
+    panel.append("<h3>Unanswered: " + (questions.length - (game.incorrect + game.correct)) + "</h3>");
+		panel.append("<br><button id='start-over'>Start Over?</button>");
+	
+		// panel.html(`
+		// 	<div id="donePanel">
+		// 		<h2>All Done!</h2>
+		// 		<h3>Correct Answers: ${this.correct}</h3>
+		// 		<h3>Incorrect Answers: ${this.incorrect}</h3>
+		// 		<h3>Unanswered: ${(questions.length - (this.incorrect + this.correct))}</h3>
+		// 		<button id='restart'>Restart</button>
+		// 	</div>
+		// `);
+  },
+
+	
+
 }
 
 
