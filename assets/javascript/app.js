@@ -50,14 +50,14 @@ var game = {
 	currentQuestion: 0,
 
 	// Count down timer for game
-	countdown: function () {
-		game.counter--;
-		$("#counter-number").html(game.counter);
-		if (game.counter === 0) {
-			console.log("TIME UP");
-			game.done();
-		}
-	},
+	countdown: function() {
+    game.counter--;
+    $("#counter-number").text(game.counter);
+    if (game.counter === 0) {
+      console.log("TIME UP");
+      game.timeUp();
+    }
+  },
 
 
 	// Function for starting the game
