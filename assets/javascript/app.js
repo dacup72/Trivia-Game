@@ -105,6 +105,15 @@ var game = {
       setTimeout(game.nextQuestion, 3 * 1000);
     }
 	},
+
+
+
+	nextQuestion: function() {
+    game.counter = countStartNumber;
+    $("#counter-number").text(game.counter);
+    game.currentQuestion++;
+    game.loadQuestion();
+  },
 	
 
 	// Load the next question
