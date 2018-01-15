@@ -104,6 +104,19 @@ var game = {
     else {
       setTimeout(game.nextQuestion, 3 * 1000);
     }
+	},
+	
+
+
+	loadQuestion: function() {
+    timer = setInterval(game.countdown, 1000);
+
+    panel.html("<h2>" + questions[this.currentQuestion].question + "</h2>");
+
+    for (var i = 0; i < questions[this.currentQuestion].answers.length; i++) {
+      panel.append("<button class='answer-button' id='button' data-name='" + questions[this.currentQuestion].answers[i]
+      + "'>" + questions[this.currentQuestion].answers[i] + "</button>");
+    }
   },
 
 
