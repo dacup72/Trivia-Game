@@ -163,15 +163,6 @@ var game = {
     panel.append("<h3>Unanswered: " + (questions.length - (game.incorrect + game.correct)) + "</h3>");
 		panel.append("<br><button id='start-over'>Start Over?</button>");
 	
-		// panel.html(`
-		// 	<div id="donePanel">
-		// 		<h2>All Done!</h2>
-		// 		<h3>Correct Answers: ${this.correct}</h3>
-		// 		<h3>Incorrect Answers: ${this.incorrect}</h3>
-		// 		<h3>Unanswered: ${(questions.length - (this.incorrect + this.correct))}</h3>
-		// 		<button id='restart'>Restart</button>
-		// 	</div>
-		// `);
   },
 
 	
