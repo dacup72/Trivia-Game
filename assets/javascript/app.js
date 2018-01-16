@@ -163,8 +163,20 @@ var game = {
     panel.append("<h3>Unanswered: " + (questions.length - (game.incorrect + game.correct)) + "</h3>");
 		panel.append("<br><button id='start-over'>Start Over?</button>");
 	
+	},
+	
+	// Checking for clicked answers
+	clicked: function(e) {
+    clearInterval(timer);
+    if ($(e.target).attr("data-name") === questions[this.currentQuestion].correctAnswer) {
+      this.answeredCorrectly();
+    }
+    else {
+      this.answeredIncorrectly();
+    }
   },
 
+	
 	
 
 }
