@@ -176,6 +176,7 @@ var game = {
     }
   },
 
+	// incorrect answer function
 	answeredIncorrectly: function() {
 
     game.incorrect++;
@@ -194,7 +195,23 @@ var game = {
     }
   },
 
+	// Correct answer function
+	answeredCorrectly: function() {
 
+    clearInterval(timer);
+
+    game.correct++;
+
+    panel.html("<h2>Correct!</h2>");
+    panel.append("<img src='" + questions[game.currentQuestion].image + "' />");
+
+    if (game.currentQuestion === questions.length - 1) {
+      setTimeout(game.results, 3 * 1000);
+    }
+    else {
+      setTimeout(game.nextQuestion, 3 * 1000);
+    }
+  },
 }
 
 
