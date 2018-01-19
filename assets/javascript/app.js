@@ -211,7 +211,16 @@ var game = {
     else {
       setTimeout(game.nextQuestion, 3 * 1000);
     }
-  },
+	},
+	
+	// Handle reset event
+	reset: function() {
+    this.currentQuestion = 0;
+    this.counter = countStartNumber;
+    this.correct = 0;
+    this.incorrect = 0;
+    this.loadQuestion();
+  }
 }
 
 
