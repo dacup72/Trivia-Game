@@ -224,21 +224,20 @@ var game = {
 }
 
 
+
 // CLICK EVENTS
 
-// Initial start button for game
+$(document).on("click", "#start-over", function() {
+  game.reset();
+});
+
+$(document).on("click", ".answer-button", function(e) {
+  game.clicked(e);
+});
+
 $(document).on("click", "#start", function() {
-  game.start();
-});
-
-// Button to submit answers when done answering the trivia questions
-$(document).on("click", "#done", function() {
-  game.done();
-});
-
-// Button to restart game
-$(document).on("click", "#restart", function() {
-  game.start();
+  $("#sub-wrapper").prepend("<h2>Time Remaining: <span id='counter-number'>30</span> Seconds</h2>");
+  game.loadQuestion();
 });
 
 
