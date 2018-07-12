@@ -1,10 +1,10 @@
-# Crystal Collector Game
+# Trivia Game
 
-Crystal Collector is a game designed to give the user 4 different crystals (each with randomly generated numbers associated to them) to click on in order to add the crystals value to an accumulating score.  There is a large target score to reach and if the user is able to match the target score with their accumulated score then the user wins.  If the user goes over the target score with their accumulated score then the user loses.
+This Trivia Game presents the player with a series of timed random trive questions to answer.  If the user fails to answer any current question in the available time then the game will count it as incorrect and move you to the next question.  At the end of the game you will be presented with your total scores. Good luck!
 
 ## Getting Started
 
-To obtain a the code for this project you can access and clone the repository here: 
+To obtain the code for this project you can access and clone the repository here: 
 
 ```
 [GitHub Repo](https://github.com/dacup72/Crystal-Collector-Game)
