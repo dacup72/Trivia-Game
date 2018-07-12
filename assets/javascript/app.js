@@ -63,7 +63,7 @@ var game = {
 		timer = setInterval(game.countdown, 1000);
 		
 		// Creates html for the timer
-		$("#sub-wrapper").prepend("<h2>Time Remaining: <span id='counter-number'>120</span> Seconds</h2>");
+		$("#sub-wrapper").prepend("<h2>Time Remaining: <span id='counter-number'>60</span> Seconds</h2>");
 		
 		// Reset panel
 		$("#start").remove();
