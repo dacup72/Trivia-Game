@@ -7,14 +7,14 @@ This Trivia Game presents the player with a series of timed random trive questio
 To obtain the code for this project you can access and clone the repository here: 
 
 ```
-[GitHub Repo](https://github.com/dacup72/Crystal-Collector-Game)
+[GitHub Repo](https://github.com/dacup72/Trivia-Game)
 
 ```
 
 In addition the live project is deployed on gitHub pages here:
 
 ```
-[GitHub Pages Live](https://dacup72.github.io/Crystal-Collector-Game/)
+[GitHub Pages Live](https://dacup72.github.io/Trivia-Game/)
 ```
 
 ### Prerequisites
