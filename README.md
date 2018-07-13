@@ -30,7 +30,7 @@ What things you need to install, the software, and how to install them:
 Step 1.
 
 ```
-Clone Git repository: [GitHub Repo](https://github.com/dacup72/Crystal-Collector-Game)
+Clone Git repository: [GitHub Repo](https://github.com/dacup72/Trivia-Game)
 ```
 
 Step 2.
@@ -45,7 +45,6 @@ Languages / Tech:
 * [Javascript](https://www.javascript.com/)
 * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-* [Webflow](https://webflow.com/)
 
 Code Editor: 
 * [Visual Studio Code](https://code.visualstudio.com/)
